@@ -1,0 +1,17 @@
+
+type Query{
+	createEmployee(employeeInput: EmployeeInput): Employee
+}
+
+type Employee{
+	id: ID
+	name: String
+	age: Int
+	department: String
+}
+
+input EmployeeInput{
+	name: String
+	age: Int
+	department: String
+}

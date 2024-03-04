@@ -1,0 +1,8 @@
+
+
+type Employee{
+	id: ID
+	name: String
+	age: Integer
+	department: String
+}

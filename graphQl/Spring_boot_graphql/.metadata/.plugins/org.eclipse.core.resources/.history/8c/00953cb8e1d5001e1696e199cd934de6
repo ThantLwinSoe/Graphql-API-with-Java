@@ -1,0 +1,4 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/test_graphql
+spring.datasource.username=root
+spring.datasource.password=ThantLwinSoe@123
+spring.jpa.hibernate.ddl-auto=update

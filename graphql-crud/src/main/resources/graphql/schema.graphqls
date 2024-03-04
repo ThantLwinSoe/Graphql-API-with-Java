@@ -1,0 +1,31 @@
+
+
+type Query{
+    findAllCoffee:[CoffeeResponse]
+    findOneCoffee(id:Int):CoffeeResponse
+}
+
+type Mutation {
+    create(coffeeRequest: CoffeeRequest!): CoffeeResponse
+    update(id:Int,size:Size): CoffeeResponse
+    delete(id:Int): Boolean
+}
+
+
+
+type CoffeeResponse{
+    id: ID
+    name: String
+    size: Size
+}
+
+input CoffeeRequest{
+    name: String
+    size: Size
+}
+
+enum Size{
+    REGULAR,
+    SMALL,
+    LARGE
+}

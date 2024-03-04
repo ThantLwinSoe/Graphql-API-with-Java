@@ -1,0 +1,25 @@
+
+type Query{
+    getEmployees: [Employee]
+    getEmployeeById(uid:Int): Employee
+}
+
+type Mutation{
+    create(employeeInput: EmployeeInput) : Employee
+    update(id:Int,employeeInput :EmployeeInput) :Employee
+    delete(id:Int) : Employee
+}
+
+
+type Employee{
+    id: ID!
+    name: String
+    age: Int
+    department: String
+}
+
+input EmployeeInput{
+    name: String
+    age: Int
+    department: String
+}
